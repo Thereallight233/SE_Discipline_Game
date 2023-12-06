@@ -1,0 +1,14 @@
+#Ignore compiled binaries
+*.exe
+*.o
+*.out
+
+# Ignore log files
+*.log
+
+# Ignore build directory
+build/
+
+# Ignore configuration file
+config.ini
+
