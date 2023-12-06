@@ -5,8 +5,8 @@ void displayMainMenu(void)
 {
     // Print the main menu options
     printf("Main Menu:\n");
-    printf("a. Transfer Money\n");
-    printf("b. Airtime and Bundles\n");
-    printf("c. Allow Cashout\n");
-    printf("d. Exit\n");
+    printf("1. Transfer Money\n");
+    printf("2. Airtime and Bundles\n");
+    printf("3. Allow Cashout\n");
+    printf("0. Exit\n");
 }
