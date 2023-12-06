@@ -1,7 +1,10 @@
+#include "main.h"
 #include <stdio.h>
 
-/* This is a simple Mobile money simulation program
- *
- *
- *
- * */
+int main()
+{
+    // Call the function from the header
+    displayMainMenu();
+
+    return (0);
+}
