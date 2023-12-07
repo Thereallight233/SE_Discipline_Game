@@ -103,7 +103,7 @@ void mobileMoneyProgram()
 			    break;
                         // Handle other transfer options here
 
-                        case 'v':
+                        case '5':
                             // Step 8b
                             // User chose to go back to the main menu
                             break;
@@ -120,13 +120,13 @@ void mobileMoneyProgram()
                     scanf(" %c", &userChoice);
 
                     switch (userChoice) {
-                        case 'i':
+                        case '1':
                             // Step 9a
                             purchaseAirtime();
                             break;
                         // Handle other airtime/bundle options here
 
-                        case 'v':
+                        case '5':
                             // Step 9b
                             // User chose to go back to the main menu
                             break;
