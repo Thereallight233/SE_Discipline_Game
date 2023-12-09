@@ -20,7 +20,6 @@ void displayTransferOptions()
    	printf("4. Bank Account\n");
    	printf("5. Back to Main Menu\n");
 }
-
 // Function to display airtime and bundles submenu
 void displayAirtimeBundlesOptions()
 {
@@ -55,8 +54,14 @@ void transferNonMomoUser()
 //Function to perform transfer to Other Networks
 void transferOtherNetworks()
 {
-	char recipientNumber[20];
-	printf("Enter re");
+	printf("Other Networks\n");
+	printf("1. AirtelTigo\n");
+ 	printf("2. Vodaphone\n");
+ 	printf("3. E-zwich\n");
+ 	printf("4. Zeepay\n");
+ 	printf("5. GhanaPay\n");
+ 	printf("6. G-money\n");
+       	printf("0. Back\n");
 }
 // Function to perform transfer to Bank Account
 void transferBankAccount()
