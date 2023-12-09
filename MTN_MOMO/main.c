@@ -123,8 +123,7 @@ void mobileMoneyProgram()
 			    transferBankAccount();
 			    break;
                         case '5':
-                            // Step 8b
-                            // User chose to go back to the main menu
+			    displayMainMenu();
                             break;
 
                         default:
