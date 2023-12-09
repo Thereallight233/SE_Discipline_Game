@@ -52,7 +52,17 @@ void transferNonMomoUser()
 	// Validation and transfer logic would go here
 	printf("Transfer to %s successful!\n", recipientName);
 }
-
+//Function to perform transfer to Other Networks
+void transferOtherNetworks()
+{
+	char recipientNumber[20];
+	printf("Enter re");
+}
+// Function to perform transfer to Bank Account
+void transferBankAccount()
+{
+	printf("Transfer to Bank");
+}
 // Function to perform airtime purchase
 void purchaseAirtime()
 {
@@ -101,8 +111,12 @@ void mobileMoneyProgram()
 			case '2':
 			    transferNonMomoUser();
 			    break;
-                        // Handle other transfer options here
-
+			case '3':
+			    transferOtherNetworks();
+			    break;
+			case '4':
+			    transferBankAccount();
+			    break;
                         case '5':
                             // Step 8b
                             // User chose to go back to the main menu
