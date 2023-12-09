@@ -18,7 +18,7 @@ void displayTransferOptions()
    	printf("2. Non Momo User\n");
    	printf("3. Other Networks\n");
    	printf("4. Bank Account\n");
-   	printf("5. Back to Main Menu\n");
+   	printf("5. Back\n");
 }
 // Function to display airtime and bundles submenu
 void displayAirtimeBundlesOptions()
