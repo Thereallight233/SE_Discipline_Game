@@ -10,9 +10,11 @@ Pitfall: Using a pointer without initializing it can result in undefined behavio
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     // Uninitialized pointer
-    int *p;
+
+	int *p;
 
     // Attempting to dereference the unitialized pointer
     *p = 20;// this is going to lead to segementation fault
@@ -29,9 +31,11 @@ Always initialize pointers to NULL or a valid memory address before using them. 
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     // Initialized pointer
-    int *ptr = NULL;  // Initialize to NULL or a valid memory address
+
+	int *ptr = NULL;  // Initialize to NULL or a valid memory address
 
     // Checking for NULL before dereferencing
     if (ptr != NULL) {
