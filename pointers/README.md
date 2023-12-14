@@ -18,6 +18,7 @@ another variable. It doesn’t store any value.
 
 Pointer Arithmetic(Addition)
 ============================
+// A simple program that demonstrates the application of the addition pointer arithmetic
 
 #include <stdio.h>
 
