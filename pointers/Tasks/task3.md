@@ -4,6 +4,7 @@ TASK3
 DISCUSS COMMON PITFALLS OR ERRORS ASSOCIATED WITH POINTERS AND STRATEGIES TO AVOID THEM
 
 Uninitialized Pointers:
+
 Pitfall: Using a pointer without initializing it can result in undefined behavior.
 
 #include <stdio.h>
@@ -19,6 +20,7 @@ int main() {
 
     return 0;
 }
+
 Avoidance Strategy: Always initialize pointers to NULL or a valid memory address before using them. Avoid using uninitialized pointers.
 
 #include <stdio.h>
