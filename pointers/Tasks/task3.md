@@ -3,10 +3,13 @@ TASK3
 
 DISCUSS COMMON PITFALLS OR ERRORS ASSOCIATED WITH POINTERS AND STRATEGIES TO AVOID THEM
 
-Uninitialized Pointers:
+1.UNITIALIZED POINTERS:
 =======================
 
-Pitfall: Using a pointer without initializing it can result in undefined behavior.
+Pitfall:
+-----------
+
+Using a pointer without initializing it can result in undefined behavior.
 
 #include <stdio.h>
 
@@ -48,4 +51,33 @@ int main()
     return 0;
 }
 
-TO BE CONTINUED...
+
+2.DANGLING POINTERS
+------------------
+
+PITFALL
+----
+
+Dangling pointers point to a memory location that has been
+deallocated or is otherwise invalid. Accessing or dereferencing a dangling
+pointer can lead to undefined behavior, crashes, or unexpected results.
+Dangling pointers often occur when a pointer continues to exist after the
+memory it points to has been released.
+
+
+int *ptr = (int *)malloc(sizeof(int));
+
+free(ptr); // Deallocate the memory
+
+// Now, ptr is a dangling pointer
+*ptr = 42; //
+
+
+AVOIDANCE STRATEGY
+-
+
+Set pointers to 'NULL' after freeing the memory, and also avoid using pointers
+after they are no longer valid.
+
+free(ptr);
+ptr = NULL; // this prevents the pointer from being a dangling pointer
