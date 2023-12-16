@@ -79,5 +79,7 @@ AVOIDANCE STRATEGY
 Set pointers to 'NULL' after freeing the memory, and also avoid using pointers
 after they are no longer valid.
 
+
 free(ptr);
+
 ptr = NULL; // this prevents the pointer from being a dangling pointer
