@@ -83,3 +83,13 @@ after they are no longer valid.
 free(ptr);
 
 ptr = NULL; // this prevents the pointer from being a dangling pointer
+
+
+
+
+3. MEMORY LEAKS
+================
+
+Memory leaks happen when a program uses memory but forgets to give it back.
+If this keeps happening, the program's memory usage grows, leading to possible
+performance problems or crashes.
