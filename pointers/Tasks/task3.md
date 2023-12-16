@@ -87,9 +87,78 @@ ptr = NULL; // this prevents the pointer from being a dangling pointer
 
 
 
-3. MEMORY LEAKS
+3.MEMORY LEAKS
 ================
+
+
+PITFALL
+-------
+
 
 Memory leaks happen when a program uses memory but forgets to give it back.
 If this keeps happening, the program's memory usage grows, leading to possible
 performance problems or crashes.
+
+#include <stdlib.h>
+
+int main()
+
+{
+    int *ptr = (int *)malloc(sizeof(int));
+
+    // Operations with ptr
+
+    return 0;
+}
+
+
+AVOIDANCE STRATEGY
+-
+
+
+a. Always Free Dynamically Allocated Memory:
+---------------------------------------
+
+Ensure that memory allocated using functions like malloc is always freed using
+'free' when it is no longer needed
+
+
+int *ptr = (int *)malloc(sizeof(int));
+
+
+// Operations with ptr
+
+
+free(ptr); // Deallocate the memory when done
+
+
+
+b. Set Pointers to 'NULL' after Deallocation
+--------------------------------------------
+
+
+int *ptr = (int *)malloc(sizeof(int));
+
+// Operations with ptr
+
+free(ptr); // Deallocate the memory
+
+ptr = NULL; // Nullify the pointer to avoid using it accidentally
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
