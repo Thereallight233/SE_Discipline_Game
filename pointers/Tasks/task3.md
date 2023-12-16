@@ -99,16 +99,25 @@ Memory leaks happen when a program uses memory but forgets to give it back.
 If this keeps happening, the program's memory usage grows, leading to possible
 performance problems or crashes.
 
+
+
 #include <stdlib.h>
+
 
 int main()
 
+
 {
-    int *ptr = (int *)malloc(sizeof(int));
 
-    // Operations with ptr
 
-    return 0;
+	int *ptr = (int *)malloc(sizeof(int));
+
+
+	// Operations with ptr
+
+
+	return 0;
+
 }
 
 
