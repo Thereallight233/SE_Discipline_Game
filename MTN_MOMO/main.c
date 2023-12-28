@@ -59,7 +59,7 @@ void transferMomoUser(void)
 	buffer[strcspn(buffer, "\n")] = '\0';
 	char recipientNumber[100];
 
-	strcpy(recipientNumber, buffer);
+	strcmp(recipientNumber, buffer);
 
 	// Ask user to confirm recipient's number
 	printf("Confirm Number (%s): ", recipientNumber);
@@ -162,10 +162,10 @@ void mobileMoneyProgram()
            case '3':
                transferOtherNetworks();
                break;
-           case '4':
+		case '4':
                transferBankAccount();
                break;
-                       case '5':
+		case '5':
                displayMainMenu();
                            break;
 
@@ -202,7 +202,7 @@ void mobileMoneyProgram()
                    performCashout();
                    break;
 
-               case '4':
+               case '0':
                    // Step 11
                    printf("Exiting Mobile Money program.\n");
                    break;
