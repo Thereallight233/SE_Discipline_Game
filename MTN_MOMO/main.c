@@ -128,7 +128,7 @@ void performCashout()
 //Function to implement the main program flow
 void mobileMoneyProgram()
 {
-       char ussdCode[10];
+       char ussdCode[10]= "*170#";
        char userChoice;
 
        // Step 1-4
